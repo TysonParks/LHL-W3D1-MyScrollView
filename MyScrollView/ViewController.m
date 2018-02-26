@@ -25,7 +25,7 @@
     
     self.mainView.bounds = CGRectMake(
                                       self.mainView.bounds.origin.x,
-                                      (self.mainView.bounds.origin.y + 0.0),
+                                      (self.mainView.bounds.origin.y + 100.0),
                                       self.mainView.bounds.size.width,
                                       self.mainView.bounds.size.height);
     

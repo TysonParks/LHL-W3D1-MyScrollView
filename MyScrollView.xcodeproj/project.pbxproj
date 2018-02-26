@@ -13,6 +13,7 @@
 		AD9F918720449C5100E7EE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9F918620449C5100E7EE64 /* Assets.xcassets */; };
 		AD9F918A20449C5100E7EE64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9F918820449C5100E7EE64 /* LaunchScreen.storyboard */; };
 		AD9F918D20449C5100E7EE64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9F918C20449C5100E7EE64 /* main.m */; };
+		AD9F91952044A64100E7EE64 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9F91942044A64100E7EE64 /* MyScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		AD9F918920449C5100E7EE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD9F918B20449C5100E7EE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD9F918C20449C5100E7EE64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD9F91932044A64100E7EE64 /* MyScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
+		AD9F91942044A64100E7EE64 /* MyScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				AD9F918320449C5100E7EE64 /* Main.storyboard */,
+				AD9F91932044A64100E7EE64 /* MyScrollView.h */,
+				AD9F91942044A64100E7EE64 /* MyScrollView.m */,
 				AD9F917D20449C5000E7EE64 /* AppDelegate.h */,
 				AD9F917E20449C5100E7EE64 /* AppDelegate.m */,
 				AD9F918020449C5100E7EE64 /* ViewController.h */,
@@ -143,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD9F918220449C5100E7EE64 /* ViewController.m in Sources */,
+				AD9F91952044A64100E7EE64 /* MyScrollView.m in Sources */,
 				AD9F918D20449C5100E7EE64 /* main.m in Sources */,
 				AD9F917F20449C5100E7EE64 /* AppDelegate.m in Sources */,
 			);
