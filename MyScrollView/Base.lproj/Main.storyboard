@@ -29,16 +29,16 @@
                                             <constraint firstAttribute="width" constant="150" id="d4K-ez-MnN"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgY-VV-Vdv" userLabel="Blue View">
-                                        <rect key="frame" x="400" y="160" width="150" height="200"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgY-VV-Vdv" userLabel="Blue View">
+                                        <rect key="frame" x="40" y="400" width="150" height="200"/>
                                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="Yyl-QJ-610"/>
                                             <constraint firstAttribute="width" constant="150" id="amb-9V-u3v"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjK-sm-fHT" userLabel="Yellow View">
-                                        <rect key="frame" x="600" y="570" width="180" height="150"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjK-sm-fHT" userLabel="Yellow View">
+                                        <rect key="frame" x="100" y="600" width="180" height="150"/>
                                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="180" id="p6x-i5-FJ9"/>
@@ -58,10 +58,12 @@
                                 <constraints>
                                     <constraint firstItem="zqE-Dq-pff" firstAttribute="top" secondItem="S7b-av-DmT" secondAttribute="top" constant="20" id="2m8-DN-c1s"/>
                                     <constraint firstItem="f0D-gl-lys" firstAttribute="top" secondItem="S7b-av-DmT" secondAttribute="top" constant="150" id="Dts-mn-bY2"/>
-                                    <constraint firstItem="pgY-VV-Vdv" firstAttribute="leading" secondItem="S7b-av-DmT" secondAttribute="leading" constant="400" id="MTT-XD-jbh"/>
+                                    <constraint firstItem="pgY-VV-Vdv" firstAttribute="leading" secondItem="S7b-av-DmT" secondAttribute="leading" constant="40" id="MTT-XD-jbh"/>
                                     <constraint firstItem="zqE-Dq-pff" firstAttribute="leading" secondItem="S7b-av-DmT" secondAttribute="leading" constant="20" id="bXE-EZ-3Nb"/>
+                                    <constraint firstItem="sjK-sm-fHT" firstAttribute="top" secondItem="S7b-av-DmT" secondAttribute="top" constant="600" id="eU3-Ge-NxS"/>
                                     <constraint firstItem="f0D-gl-lys" firstAttribute="leading" secondItem="S7b-av-DmT" secondAttribute="leading" constant="150" id="gMo-ci-C2I"/>
-                                    <constraint firstItem="sjK-sm-fHT" firstAttribute="leading" secondItem="S7b-av-DmT" secondAttribute="leading" constant="600" id="mSW-pw-aY9"/>
+                                    <constraint firstItem="sjK-sm-fHT" firstAttribute="leading" secondItem="S7b-av-DmT" secondAttribute="leading" constant="100" id="mSW-pw-aY9"/>
+                                    <constraint firstItem="pgY-VV-Vdv" firstAttribute="top" secondItem="S7b-av-DmT" secondAttribute="top" constant="400" id="sdX-VD-Ua1"/>
                                 </constraints>
                             </view>
                         </subviews>
