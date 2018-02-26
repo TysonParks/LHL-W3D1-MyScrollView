@@ -16,6 +16,27 @@
 
 @implementation MyScrollView
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setupPanViewGestureRecognizer];
+    }
+    return self;
+}
+
+
+
+-(void)setupPanViewGestureRecognizer {
+    self.panGestureReconizer = [[UIPanGestureRecognizer alloc] init];
+    self.panGestureReconizer.minimumNumberOfTouches = 1;
+    self.panGestureReconizer.maximumNumberOfTouches = 1;
+    [self addGestureRecognizer:self.panGestureReconizer];
+    
+    [self.panGestureReconizer addTarget:self action:@selector(handlePanGesture:)];
+}
+
+
 
 -(void)handlePanGesture:(UIPanGestureRecognizer *) gestureRecognizer {
     

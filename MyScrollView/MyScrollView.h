@@ -12,6 +12,6 @@
 
 @property (nonatomic) CGSize contentSize;
 
-
+@property (strong, nonatomic) UIPanGestureRecognizer *panGestureReconizer;
 
 @end
