@@ -20,12 +20,19 @@
 {
     self = [super init];
     if (self) {
-        [self setupPanViewGestureRecognizer];
+        
     }
     return self;
 }
 
-
+- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+    
+    self = [super initWithCoder:aDecoder];
+    if ( self ){
+        [self setupPanViewGestureRecognizer];
+    }
+    return self;
+}
 
 -(void)setupPanViewGestureRecognizer {
     self.panGestureReconizer = [[UIPanGestureRecognizer alloc] init];
