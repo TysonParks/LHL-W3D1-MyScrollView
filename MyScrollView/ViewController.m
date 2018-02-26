@@ -21,8 +21,13 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+  
     
-    
+    self.mainView.bounds = CGRectMake(
+                                      self.mainView.bounds.origin.x,
+                                      (self.mainView.bounds.origin.y + 400.0),
+                                      self.mainView.bounds.size.width,
+                                      self.mainView.bounds.size.height);
     
 }
 
