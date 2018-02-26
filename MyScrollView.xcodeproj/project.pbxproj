@@ -58,11 +58,11 @@
 		AD9F917C20449C5000E7EE64 /* MyScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				AD9F918320449C5100E7EE64 /* Main.storyboard */,
 				AD9F917D20449C5000E7EE64 /* AppDelegate.h */,
 				AD9F917E20449C5100E7EE64 /* AppDelegate.m */,
 				AD9F918020449C5100E7EE64 /* ViewController.h */,
 				AD9F918120449C5100E7EE64 /* ViewController.m */,
-				AD9F918320449C5100E7EE64 /* Main.storyboard */,
 				AD9F918620449C5100E7EE64 /* Assets.xcassets */,
 				AD9F918820449C5100E7EE64 /* LaunchScreen.storyboard */,
 				AD9F918B20449C5100E7EE64 /* Info.plist */,
