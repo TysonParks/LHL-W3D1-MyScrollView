@@ -55,6 +55,7 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="zqE-Dq-pff" firstAttribute="top" secondItem="S7b-av-DmT" secondAttribute="top" constant="20" id="2m8-DN-c1s"/>
                                     <constraint firstItem="f0D-gl-lys" firstAttribute="top" secondItem="S7b-av-DmT" secondAttribute="top" constant="150" id="Dts-mn-bY2"/>
@@ -65,6 +66,9 @@
                                     <constraint firstItem="sjK-sm-fHT" firstAttribute="leading" secondItem="S7b-av-DmT" secondAttribute="leading" constant="100" id="mSW-pw-aY9"/>
                                     <constraint firstItem="pgY-VV-Vdv" firstAttribute="top" secondItem="S7b-av-DmT" secondAttribute="top" constant="400" id="sdX-VD-Ua1"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rX1-AJ-kvU" appends="YES" id="bhb-kH-Gag"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -81,6 +85,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="rX1-AJ-kvU"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>

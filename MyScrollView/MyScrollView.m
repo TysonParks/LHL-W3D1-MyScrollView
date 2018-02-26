@@ -8,7 +8,23 @@
 
 #import "MyScrollView.h"
 
+@interface MyScrollView ()
+
+-(void)handlePanGesture:(UIPanGestureRecognizer *) gestureRecognizer;
+
+@end
+
 @implementation MyScrollView
+
+
+-(void)handlePanGesture:(UIPanGestureRecognizer *) gestureRecognizer {
+    
+}
+
+
+
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.
