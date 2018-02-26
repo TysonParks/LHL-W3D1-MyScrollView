@@ -51,13 +51,13 @@
 
 -(void)handlePanGesture:(UIPanGestureRecognizer *) gestureRecognizer
 {
-    // Get pan translation
+    // Get panGesture translation
     self.panTranslationPoint = [gestureRecognizer translationInView:self];
-    // 
+    // Reset translation to (0,0) for each gesture
     [self.panGestureReconizer setTranslation:CGPointZero inView:self];
-    
+    // Assign a float variable to pass bounds translation calculation to self.bounds
     CGFloat constrainedYTranslation = (self.bounds.origin.y - self.panTranslationPoint.y);
-    
+    // Constrain translation to desired frame range
     if (constrainedYTranslation > 600.0) {
         constrainedYTranslation = 600.0;
     } else if (constrainedYTranslation < 0.0) {
@@ -66,24 +66,12 @@
         constrainedYTranslation = constrainedYTranslation;
     }
     
+    // Change self.bounds with constrainedYTranslation
         self.bounds =
         CGRectMake(self.bounds.origin.x,
                    constrainedYTranslation,
                    self.bounds.size.width,
                    self.bounds.size.height);
 }
-
-
-
-
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end
