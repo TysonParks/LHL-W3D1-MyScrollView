@@ -30,6 +30,10 @@
     self = [super initWithCoder:aDecoder];
     if ( self ){
         [self setupPanViewGestureRecognizer];
+        self.frame = CGRectMake(self.bounds.origin.x,
+                                 self.bounds.origin.y,
+                                 self.bounds.size.width,
+                                 self.bounds.size.height + 600);
     }
     return self;
 }
@@ -45,9 +49,28 @@
 
 
 
--(void)handlePanGesture:(UIPanGestureRecognizer *) gestureRecognizer {
+-(void)handlePanGesture:(UIPanGestureRecognizer *) gestureRecognizer
+{
+    // Get pan translation
     self.panTranslationPoint = [gestureRecognizer translationInView:self];
+    // 
+    [self.panGestureReconizer setTranslation:CGPointZero inView:self];
     
+    CGFloat constrainedYTranslation = (self.bounds.origin.y - self.panTranslationPoint.y);
+    
+    if (constrainedYTranslation > 600.0) {
+        constrainedYTranslation = 600.0;
+    } else if (constrainedYTranslation < 0.0) {
+        constrainedYTranslation = 0.0;
+    } else {
+        constrainedYTranslation = constrainedYTranslation;
+    }
+    
+        self.bounds =
+        CGRectMake(self.bounds.origin.x,
+                   constrainedYTranslation,
+                   self.bounds.size.width,
+                   self.bounds.size.height);
 }
 
 
