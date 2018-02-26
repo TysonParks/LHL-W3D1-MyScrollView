@@ -39,6 +39,7 @@
 
 
 -(void)handlePanGesture:(UIPanGestureRecognizer *) gestureRecognizer {
+    self.panTranslationPoint = [gestureRecognizer translationInView:self];
     
 }
 

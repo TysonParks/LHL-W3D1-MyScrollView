@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *mainView;
+@property (strong, nonatomic) MyScrollView *myScrollView;
 
 @end
 
@@ -17,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _myScrollView = [[MyScrollView alloc]init];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -25,10 +27,11 @@
     
     self.mainView.bounds = CGRectMake(
                                       self.mainView.bounds.origin.x,
-                                      (self.mainView.bounds.origin.y + 100.0),
+                                      (self.mainView.bounds.origin.y + (self.myScrollView.panTranslationPoint.y)),
                                       self.mainView.bounds.size.width,
                                       self.mainView.bounds.size.height);
-    
 }
+
+
 
 @end
